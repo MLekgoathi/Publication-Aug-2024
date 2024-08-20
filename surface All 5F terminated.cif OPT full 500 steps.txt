@@ -1,0 +1,157 @@
+[Fri Jun 21 19:28:16 SAST 2024] [MD] [warn] 'Starting MedeA Core 3.8.1'
+MedeA version 3.8.1
+
+#-------------------------------------------------------------------------------
+#                This calculation has 1 stage
+#-------------------------------------------------------------------------------
+
+Stage 1: VASP 5.4
+	  
+
+#-------------------------------------------------------------------------------
+#                Running the calculation
+#-------------------------------------------------------------------------------
+
+
+Stage 1: VASP 5.4
+Sucessfully opened MedeA database from /home/medea/MD/Databases/MedeA.db
+
+
+VASP 5.4 CALCULATION PROTOCOL:
+==============================
+1. Geometry optimization (atom positions, unit cell shape, unit cell volume)
+
+
+VASP parameters
+===============
+This is a calculation based on density functional theory and the GGA-PBE exchange-correlation functional for describing the interactions.
+
+Since no magnetic moments are in the model, this is a non-magnetic calculation using 'normal' precision
+and a user-defined planewave cutoff energy of 600.000 eV.
+
+The electronic iterations convergence is 1.00E-05 eV using the Normal (blocked Davidson) algorithm
+and reciprocal space projection operators.
+
+The requested k-spacing is 0.3 per Angstrom, which leads to a 5x5x1 mesh.
+This corresponds to actual k-spacings of 0.242 x 0.242 x 0.168 per Angstrom.
+The k-mesh is forced to be centered on the gamma point.
+
+Using Gaussian smearing with a width of 0.05 eV.
+
+Other non-default parameters:
+	Extra input is Automatic mesh
+0
+Gamma
+  5   5   1
+  0.  0.  0.
+	Number of steps is 500
+==========================================
+
+Using version 4.0 GGA-PBE / PAW potentials:
+	Li sv          	  PAW_PBE Li_sv 10Sep2004                
+	F              	  PAW_PBE F 08Apr2002                    
+	P              	  PAW_PBE P 06Sep2000                    
+
+There are 6 symmetry-unique k-points
+The plane wave cutoff is 600.00 eV
+
+   VASP energy:            -185.628175 eV for Li5P5F28 cell
+
+   Initial VASP energy:    -185.276670 eV for Li5P5F28 cell
+   Relaxation energy:        -0.351505 eV gained after 100 optimization steps.
+
+Electronic contributions:
+                          Empirical Formula          Cell
+                              Li5P5F28        Li5P5F28
+                          ----------------- -----------------
+              VASP Energy        -185.628175     -185.628175 eV
+                        =      -17910.392      -17910.392 kJ/mol
+
+Cell parameters:
+ Parameter   Original     change      Final       %
+---------- ------------ ---------- ------------ -----
+         a     5.193186  -0.010243     5.182943  -0.2
+         b     5.193186  -0.010243     5.182943  -0.2
+         c    37.357278  -7.445597    29.911681 -19.9
+     alpha    90.000000   0.000000    90.000000   0.0
+      beta    90.000000   0.000000    90.000000   0.0
+     gamma    90.000000   0.000000    90.000000   0.0
+
+    Volume  1007.495171 -203.980867   803.514304 -20.2
+
+        Density:     1.491 Mg/m^3
+
+   The pressure given below is exerted by the system according to its volume.
+   Positive pressure would cause expansion during full geometry optimization.
+       Pressure:    -9.245 MPa
+               =   -92.451 bar
+
+                      XX        YY        ZZ        YZ        XZ        XY
+         Stress:    12.363    12.363     3.009    -0.000    -0.000    -0.000 MPa
+               =   123.634   123.634    30.086    -0.000    -0.000    -0.000 bar
+   The stress tensor above is imposed on the system, i.e. negative values of diagonal components 
+   would cause expansion of the corresponding lattice parameter upon full geometry optimization.
+   The pressure and stress include only electronic terms, i.e. the vibrational,
+   temperature and other terms are not included here.
+
+Fractional Coordinates:
+	Atom          Initial Coordinates             Final Coordinates
+	-----      -------- -------- --------      -------- -------- --------
+	Li           0.0000   0.0000   0.3995        0.0000   0.0000   0.3752
+	Li2          0.5000   0.5000   0.3048        0.5000   0.5000   0.2555
+	Li3          0.5000   0.5000   0.5000        0.5000   0.5000   0.5000
+	F            0.7687   0.7687   0.2985        0.7676   0.7676   0.2459
+	F2           0.7780   0.7780   0.5000        0.7770   0.7770   0.5000
+	F3           0.0000   0.0000   0.3424        0.0000   0.0000   0.3015
+	F4           0.0000   0.0000   0.5437        0.0000   0.0000   0.5545
+	F5           0.2776   0.2776   0.4010        0.2769   0.2769   0.3763
+	F6           0.5000   0.5000   0.4446        0.5000   0.5000   0.4308
+	F7           0.5000   0.5000   0.6425        0.5000   0.5000   0.6781
+	P            0.0000   0.0000   0.2991        0.0000   0.0000   0.2473
+	P2           0.0000   0.0000   0.5000        0.0000   0.0000   0.5000
+	P3           0.5000   0.5000   0.4010        0.5000   0.5000   0.3763
+
+Analytic Derivatives:
+	Atom         Derivatives fractional      Derivatives Cartesian (eV/Ang)
+	-----      -------- -------- --------    -------- -------- --------
+	Li           0.0000   0.0000   0.0000	   0.0000  -0.0000   0.0007
+	Li2          0.0000   0.0000   0.0003	   0.0000  -0.0000   0.0111
+	Li3          0.0000   0.0000   0.0000	   0.0000  -0.0000  -0.0000
+	F            0.0016   0.0016  -0.0002	   0.0085   0.0085  -0.0063
+	F2           0.0027   0.0027   0.0000	   0.0139   0.0139  -0.0000   maximum gradient = 0.0196
+	F3           0.0000   0.0000  -0.0002	   0.0000   0.0000  -0.0092
+	F4           0.0000   0.0000   0.0005	   0.0000  -0.0000   0.0172
+	F5           0.0006   0.0006  -0.0001	   0.0034   0.0034  -0.0054
+	F6           0.0000   0.0000  -0.0005	   0.0000   0.0000  -0.0170
+	F7           0.0000   0.0000   0.0002	   0.0000  -0.0000   0.0090
+	P            0.0000   0.0000   0.0000	   0.0000  -0.0000   0.0013
+	P2           0.0000   0.0000   0.0000	   0.0000  -0.0000  -0.0000
+	P3           0.0000   0.0000   0.0002	   0.0000  -0.0000   0.0092
+
+Atomic partial charges (electron charges):
+	Atom           s        p        d     total 
+	-----      -------- -------- -------- --------
+	Li            2.033    0.155    0.072    2.260
+	Li2           2.054    0.194    0.089    2.336
+	Li3           2.038    0.167    0.079    2.284
+	F             1.475    3.726    0.004    5.206
+	F2            1.469    3.762    0.006    5.236
+	F3            1.471    3.751    0.006    5.228
+	F4            1.469    3.760    0.006    5.235
+	F5            1.469    3.761    0.006    5.237
+	F6            1.469    3.761    0.006    5.236
+	F7            1.469    3.763    0.006    5.238
+	P             0.921    1.075    0.416    2.412
+	P2            0.767    1.207    0.618    2.592
+	P3            0.767    1.207    0.619    2.592
+
+Analysis of the electronic structure:
+	The system is a metal. The Fermi energy is located in the band interval (#118 - #119)
+ 	spanning the energy interval (-0.220:0.235)eV with respect to the Fermi level.
+	The Fermi energy is used as the zero of the energy scale.
+
+Job completed on Fri 21 June 2024 at 23:53:38 SAST after 15921 s (4:25:21)
+
+
+Entire job completed on Fri 21 June 2024 at 23:53:38 SAST after 15921 s (4:25:21)
+and running 1 tasks.

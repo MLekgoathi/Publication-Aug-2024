@@ -1,0 +1,30 @@
+# SCF input for VASP
+# Note that VASP uses the FIRST occurence of a keyword
+SYSTEM = Li5P5F29H  (P1) ~ All_5F_terminated.cif  (VASP)
+
+    PREC = Normal
+   ENCUT = 499.034
+  IBRION = -1
+     NSW = 0
+    ISIF = 2
+  NELMIN = 2
+   EDIFF = 1.0e-05
+  EDIFFG = -0.02
+ VOSKOWN = 1
+  NBLOCK = 1
+  NWRITE = 1
+    NELM = 60
+    ALGO = Normal (blocked Davidson)
+   ISPIN = 1
+  INIWAV = 1
+  ISTART = 0
+  ICHARG = 2
+   LWAVE = .FALSE.
+  LCHARG = .FALSE.
+ ADDGRID = .FALSE.
+  ISMEAR = 1
+   SIGMA = 0.2
+   LREAL = .FALSE.
+LSCALAPACK = .FALSE.
+RWIGS = 1.23 0.72 1.06 0.32
+
